@@ -606,14 +606,16 @@ a{
 }
 
 .loader::after {
-	position: absolute;
-	content: 'Turn your \0009 \266A \0009 on';
-	color: #fff;
-	top: 60%;
-	width: 100%;
-	left: 0;
-	text-align: center;
-	font-size: 1.5em;
+	top: 47.5%;
+	left: 47.5%;
+	margin: -30px 0 0 -30px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 65px 100px 65px;
+		border-color: transparent transparent #fff transparent;
+	opacity: 0.4;
+	animation: loaderAnim 0.4s linear infinite alternate forwards;
 }
 
 .js .loader {
@@ -627,7 +629,7 @@ a{
 }
 
 .loader__circle {
-	fill: #f0a85e;
+	fill: #fff;
 	opacity: 0.1;
 	-webkit-animation: moveUpDown 0.5s ease alternate infinite forwards;
 	animation: moveUpDown 0.5s ease alternate infinite forwards;
